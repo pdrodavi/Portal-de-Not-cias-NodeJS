@@ -1,0 +1,14 @@
+CREATE DATABASE portal_noticias;
+
+use portal_noticias;
+
+CREATE TABLE noticias(
+	id SERIAL,
+	titulo varchar(100),
+	noticia text,
+	resumo varchar(100),
+	autor varchar(30),
+	data_noticia date,
+	data_criacao timestamp default current_timestamp,
+	PRIMARY KEY(id)
+);
